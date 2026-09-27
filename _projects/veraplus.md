@@ -7,7 +7,7 @@ desc: "A Chrome web extension to enhance your Veracross experience. This project
 img: "/static/img/veraplus.png"
 width: "150"
 height: "150"
-github_url: "https://github.com/hummusphere/Veraplus"
+github_url: "https://github.com/humdanq/Veraplus"
 tag: "Web Extensions"
 topics:
   - "Chrome API"

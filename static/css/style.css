@@ -1,9 +1,14 @@
 :root {
-  --text-color: rgb(50, 50, 50);
+  --text-color: rgb(80, 80, 80);
   --header-link-hover: rgb(242, 242, 242);
   --bg-color: white;
   --border-color: #c3c7cb;
-  --header-footer-color: rgba(255,255,255);
+  --header-footer-color: #f3f4f6;
+  --footer-color: #f9fafb;
+  --footer-text-color:rgb(80, 80, 80);
+  --footer-header-color: #2e333d;
+  --button-background: #f6f8fa;
+  --button-border: #d1d9e0;
   --black: #000000;
   --spring-green: #00a832;
   --seafoam-green: #e7ffee;
@@ -22,6 +27,11 @@
   --border-color: #3d4d3d;
   --header-footer-color: #1a2c23;
   --black: #ffffff;
+  --footer-color: rgb(15,30,20);
+  --footer-text-color: rgb(240, 253, 240);
+  --footer-header-color:rgb(194, 255, 191);
+  --button-background: #264033;
+  --button-border:#4c6a4c;
   --spring-green: rgb(96, 255, 96);
   --seafoam-green: #284530;
   --sage-green: #257118;
@@ -89,20 +99,18 @@ body {
 }
 
 footer {
-  background-color: rgb(15,30,20);
+  background-color: var(--footer-color);
   margin-top: auto;
   padding: 10px;
-  color: rgb(240, 253, 240);
-  border-top: 1px solid var(--border-color);
+  color: var(--footer-text-color);
   height: fit-content;
   flex-shrink: 0;
   flex-wrap: wrap;
 }
 
 .footer-links {
-  color: rgb(240, 253, 240);
+  color: var(--footer-text-color);
   text-decoration: none;
-  transition: 0.2S;
 }
 
 .footer-links:hover {
@@ -112,6 +120,7 @@ footer {
 header {
   width: 100%;
   height: fit-content;
+  border-bottom: 1px solid var(--border-color);
   color: var(--text-color);
   top: 0;
   z-index: 1000;
@@ -314,9 +323,7 @@ code {
   width: 300px;
   height: 100px;
   border: 1px solid var(--border-color);
-  box-shadow: var(--box-shadow);
   border-radius: 7px;
-  transition: 0.2s;
   text-decoration: none;
   color: var(--text-color);
 }
@@ -332,7 +339,6 @@ code {
 .blog-list-a-tag {
   font-weight: bold;
   margin: 5px;
-  transition: 0.2s;
 }
 
 #blog-content {
@@ -449,12 +455,12 @@ code {
 .blog-share {
   transition: 0.2s;
   text-decoration: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--button-border);
+  background: var(--button-background);
   border-radius: 5px;
   padding: 10px;
   width: fit-content;
   color: var(--text-color);
-  box-shadow: var(--box-shadow);
 }
 
 .blog-side-link {
@@ -501,13 +507,13 @@ code {
 .see-more {
   transition: 0.2s;
   text-decoration: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--button-border);
   border-radius: 5px;
   padding: 10px;
   margin: 10px 10px 10px 20px;
   width: fit-content;
   color: var(--text-color);
-  box-shadow: var(--box-shadow);
+  background: var(--button-background);
 }
 
 /* Projects */
@@ -523,11 +529,15 @@ code {
   box-shadow: var(--box-shadow);
 }
 
-.proj:hover, .blog-item:hover, .project:hover, .blog-next:hover  {
+.proj:hover, .project:hover, .blog-next:hover  {
   border-color: var(--spring-green);
   transform: translateY(-10px);
   cursor: pointer;
-  box-shadow: var(--box-shadow-hover);
+}
+
+.blog-item:hover {
+  border-color: var(--spring-green);
+  cursor: pointer;
 }
 
 .proj:hover .proj-header {
@@ -572,13 +582,13 @@ h3, h2 {
 .about-me-github-button {
   transition: 0.2s;
   text-decoration: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--button-border);
   border-radius: 5px;
   padding: 10px;
+  background: var(--button-background);
   width: fit-content;
   gap: 10px;
   color: var(--text-color);
-  box-shadow: var(--box-shadow);
 }
 
 .about-me-github-button:hover {
@@ -596,7 +606,6 @@ h3, h2 {
   transition: 0.2s;  
   border: 1px solid var(--border-color);
   font-size: 14px;
-  box-shadow: var(--box-shadow);
 }
 
 .about-tag {
@@ -667,7 +676,6 @@ h3, h2 {
   transition: 0.2s;
 }
 
-
  @media (max-width: 1000px) {
   #blog-page {
     display:flex;
@@ -684,3 +692,4 @@ h3, h2 {
     padding:0px;
   }
  }
+
