@@ -7,10 +7,9 @@ desc: "JS, CSS, HTML, and the JEKYLL config that I wrote to make the front-end o
 img: "https://miro.medium.com/1*kwN_Y8GNf2ZB6sNQxngVyw@2x.jpeg"
 width: "220"
 height: "150"
-github_url: "https://github.com/humdanq/hummusphere.github.io"
+github_url: "https://github.com/humdanq/humdanq.github.io"
 tag: "Web Development"
 topics:
-  - "HTML"
   - "CSS"
   - "JavaScript"
 toc:

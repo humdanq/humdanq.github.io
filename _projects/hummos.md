@@ -4,7 +4,7 @@ title: HummOS
 date: 2026-06-29
 permalink: /projects/hummos/
 desc: "My own custom operating system made from assembly. Similar to MS DOS with around 18 commands to use."
-img: "https://github.com/humdanq/HummOS/blob/main/preview.png?raw=true"
+img: "https://miro.medium.com/1*kwN_Y8GNf2ZB6sNQxngVyw@2x.jpeg"
 width: "220"
 height: "150"
 github_url: "https://github.com/humdanq/HummOS"
