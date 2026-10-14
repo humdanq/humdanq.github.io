@@ -30,9 +30,7 @@ toc:
 
 # HummOS
 
-My own custom operating system made from assembly. Click below for a demo.
-
-<a href="https://youtu.be/AIzbUgElu74"><img style="border-radius:7px; border: 1px solid var(--border-color);" width="600" height="300" src="https://github.com/hummusphere/HummOS/blob/main/preview.png?raw=true"></a>
+My own custom operating system made from assembly.
 
 ## Description
 This project took around 40 hours. It has a built-in command line interface, you can use any of the available commands displayed below. HummOS mainly relies on the BIOS's VGA text mode, so the program might look different depending on your software. This entire program fits inside a 1.44MB floppy disk with the kernel using 50 sectors of memory.  

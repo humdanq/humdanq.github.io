@@ -148,15 +148,7 @@ header {
   margin-right: 10px;
 }
 
-#profile-container {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  padding: 10px;
-  height: 30px;
-  transition: background 0.2s;
-  border-radius: 7px;
-}
+
 
 #profile-container:hover {
   background-color: var(--header-link-hover);
@@ -197,7 +189,7 @@ header {
   border-radius: 100%;
 }
 
-#hummusphere-title {
+#title {
   margin: 0px;
   color: var(--black);
   text-decoration: none !important;
